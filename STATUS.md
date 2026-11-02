@@ -4,9 +4,9 @@
 - 2026-11-02: LIVE at https://for-all-the-names.vercel.app (Vercel project rsarkerai-8352s-projects/for-all-the-names, deployed from web/ with `vercel deploy --prod`). Code on private repo rafwan-sarker/drizzy-world, branch feature/site-v1.
 
 ## Next
-1. Merge feature/site-v1 into main.
-2. Optional: set VITE_FEEDBACK_URL in Vercel env for the "Missed a name?" link; custom domain.
-3. Pipeline cleanup from review: shared call_claude/fetch helpers in common.py; lyrics.ovh fallback only by exact artist.
+1. Raf: check on a real iPhone (Safari); merge feature/site-v1 into main.
+2. Optional: feedback link (VITE_FEEDBACK_URL), own domain, map tiles with a key (CARTO/MapTiler) if traffic grows.
+3. Data polish: ~250 unhighlighted quotes, ~40 city-level venue pins, long-tail duplicate names. Pipeline helper cleanup.
 
 ## Blockers
 - none
