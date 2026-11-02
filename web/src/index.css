@@ -250,3 +250,16 @@ mark[role="button"]:hover { text-decoration-color: var(--gold); background: oklc
 .bstats .tiles { grid-template-columns: repeat(4, 1fr); }
 .bstats .tile b { text-transform: capitalize; }
 @media (max-width: 800px) { .bstats .tiles { grid-template-columns: repeat(2, 1fr); } }
+
+/* phone: no album strip; places = map + list */
+@media (min-width: 801px) { .mobile-only { display: none; } }
+@media (max-width: 800px) {
+  .desk-only { display: none; }
+  .rail { display: none; }
+  .pside .mobile-only .phead { padding: 4px 4px 8px !important; font-size: 18px !important; }
+  .pside .mobile-only .filter { margin: 0 0 8px; width: 100%; }
+  .pside .mobile-only .list { padding: 0; }
+  .pside .mobile-only .list button { font-size: 16px; padding: 11px 8px; }
+  .pside { padding-top: 12px; }
+}
+@media (max-width: 800px) { .pmap { flex: 0 0 40vh; height: 40vh; } }

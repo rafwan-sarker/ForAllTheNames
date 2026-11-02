@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { count, kindLabel, pct, rankBySongs } from "../data";
 import type { Album, Category, Data, Mention, Song } from "../types";
 import MapView from "./MapView";
-import { SongCards } from "./Panel";
+import { List, SongCards } from "./Panel";
 
 function Bars({ rows, onPick, fmt, max = 10 }: { rows: [string, number][]; onPick?: (k: string) => void; fmt?: (n: number) => string; max?: number }) {
   const top = rows.slice(0, max); const m = top[0]?.[1] ?? 1;
@@ -82,6 +82,11 @@ export default function PlacesView({ d, all, ms, songs, albums, album, selected,
   } else {
     side = (
       <>
+        <div className="mobile-only">
+          <div className="phead"><span>Places</span><span className="muted">{rows.length} places · by songs</span></div>
+          <List rows={rows} selected={selected} onPick={onPick} />
+        </div>
+        <div className="desk-only">
         <Tiles items={[["Mentions", ms.length.toLocaleString()], ["Unique places", String(rows.length)], ["Countries", String(countries.length)], ["Songs with a place", pct(withPlace, songTotal), `${withPlace} of ${songTotal}`]]} />
         <Years ms={ms} songs={songs} />
         <div className="pgrid">
@@ -92,6 +97,7 @@ export default function PlacesView({ d, all, ms, songs, albums, album, selected,
               fmt={(n) => n.toFixed(1)} onPick={(k) => { const a = perAlbum.find((x) => x.label === k); if (a) onAlbum(a.id); }} />
           </section>
           <section className="psec"><h3>Kind of place</h3><Bars rows={count(ms, (m) => kindLabel(m.kind))} /></section>
+        </div>
         </div>
         <p className="credit">Places view inspired by <a href="https://drizzy.world" target="_blank" rel="noreferrer">drizzy.world</a> by niko draca. Lyrics from Genius.</p>
       </>
