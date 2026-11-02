@@ -1,4 +1,4 @@
-# drizzy-world (site name: For All The Names)
+# forallthenames (site: For All The Names)
 
 Every place, player, brand and person Drake has ever mentioned, mapped and counted.
 Rebuild and extension of niko draca's drizzy.world (places only). Ours adds athletes, musicians, brands, women and other people.

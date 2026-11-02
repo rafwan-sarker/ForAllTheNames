@@ -4,7 +4,7 @@ Usage: python3 04_geocode.py [mentions_dir sweep_dir]"""
 import json, time, urllib.parse, sys
 from collections import Counter
 from common import *
-H = {"User-Agent": "drizzy-world/0.1 (rsarker.ai@gmail.com)", "Accept-Language": "en"}
+H = {"User-Agent": "forallthenames/0.1 (rsarker.ai@gmail.com)", "Accept-Language": "en"}
 dirs = sys.argv[1:] or ["mentions", "sweep"]
 cache_p = RAW / "geocode.json"
 cache = jload(cache_p) if cache_p.exists() else {}
