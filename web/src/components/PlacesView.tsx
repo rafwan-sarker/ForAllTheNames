@@ -62,6 +62,7 @@ export default function PlacesView({ d, all, ms, songs, albums, album, selected,
         <div className="kicker">Place · {kindLabel(p?.kind ?? "")}{p?.country ? ` · ${p.country}` : ""}</div>
         <h2 className="ptitle">{selected}</h2>
         <Tiles items={[["Mentions", String(selMs.length)], ["Songs", String(new Set(selMs.map((m) => m.song)).size)], ["First", yrs.length ? String(Math.min(...yrs)) : "—"], ["Latest", yrs.length ? String(Math.max(...yrs)) : "—"]]} />
+        <Years ms={selMs} songs={songs} />
         <section className="psec"><h3>Songs</h3><SongCards ms={[...selMs].sort((a, b) => (songs.get(a.song)?.year ?? 0) - (songs.get(b.song)?.year ?? 0))} songs={songs} albums={albums} all={d.mentions} go={go} /></section>
       </>
     );

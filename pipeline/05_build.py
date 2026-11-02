@@ -77,12 +77,25 @@ out_m += extra; stats["women_crosslisted"] = len(extra)
 
 # tighten quotes: Sonnet sometimes quotes the whole line; highlight only the name or a short alias found on that line
 aliases = {}
+KNOWN = {  # well-known nicknames the highlighter may always look for
+    ("place", "Toronto"): ["T-Dot", "T-dot", "T.O.", "T.O", "the 6ix", "the 6", "the Six", "6ix", "Toronto", "416"],
+    ("place", "Houston"): ["H-Town", "Houston", "the H"], ("place", "Atlanta"): ["ATL", "the A", "Atlanta"],
+    ("place", "Los Angeles"): ["L.A.", "LA", "Los Angeles"], ("place", "New York City"): ["New York", "NYC", "N.Y."],
+    ("place", "Memphis"): ["Memphis"], ("place", "Miami"): ["Miami", "the 305", "305"],
+}
+for k, v in KNOWN.items(): aliases.setdefault(k, set()).update(v)
 for m in out_m:
     t = m["text"].strip()
     if 0 < len(t) <= 25: aliases.setdefault((m["category"], m["name"]), set()).add(t)
 tight = 0
 for m in out_m:
     t, lt = m["text"].strip(), m["lineText"]
+    if t and len(t) <= 3:  # tiny quote ("To", "6"): prefer a longer known alias that is really on the line ("T-Dot")
+        for c in sorted(aliases.get((m["category"], m["name"]), set()), key=len, reverse=True):
+            if len(c) <= len(t): break
+            mm = re.search(r"(?<![A-Za-z0-9])" + re.escape(c) + r"(?![A-Za-z0-9])", lt, re.I)
+            if mm: m["text"] = lt[mm.start():mm.end()]; tight += 1; break
+        continue
     if len(t) <= 25 and t: continue
     cands = sorted(aliases.get((m["category"], m["name"]), set()) | {m["name"]} | {w for w in re.split(r"[\s,()]+", m["name"]) if len(w) >= 3}, key=len, reverse=True)
     for c in cands:

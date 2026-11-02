@@ -7,7 +7,10 @@ function hl(line: string, ms: Mention[], go?: (c: Category, n: string) => void) 
   for (const m of ms) {
     const t = m.text;
     if (!t || t.length > 25) continue;
-    const i = line.toLowerCase().indexOf(t.toLowerCase());
+    // whole-word match, exact case first ("40" must not light up inside "400")
+    const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const hit = new RegExp(`(?<![A-Za-z0-9])${esc}(?![A-Za-z0-9])`).exec(line) ?? new RegExp(`(?<![A-Za-z0-9])${esc}(?![A-Za-z0-9])`, "i").exec(line);
+    const i = hit ? hit.index : -1;
     if (i >= 0 && !spans.some(([a, b]) => i < b && i + t.length > a)) spans.push([i, i + t.length, m]);
   }
   if (!spans.length) return line;
