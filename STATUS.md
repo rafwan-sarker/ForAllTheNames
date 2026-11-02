@@ -11,6 +11,7 @@
 - Raf: deploy decision; feedback link destination (email/form/social) if wanted.
 
 ## Decisions
+- 2026-11-02: Category tabs in Rock Salt (free lookalike of the IYRTITL lettering). The real recreation "With My Woes" is personal-use only, not used.
 - 2026-11-02: Wordmark in Oswald 700, spaced caps, blue/red offset glow (ICEMAN promo look, Raf picked B); no subtitle.
 - 2026-11-02: Places view rebuilt in drizzy.world's structure (Raf's call): By album / By place rail, overview column (tiles, year chart, top lists), map right; credit line to drizzy.world. Other categories: leaderboard with album covers. Logo: Raf's Starbucks selfie (web/public/logo.jpg, Raf chose it).
 - 2026-11-02: Rankings use number of songs, not raw mentions (one chorus put Missy at #1). Women also includes women filed elsewhere (Nicki, Beyoncé, Serena...) via `05b_women.py` (one Sonnet call, 68 names).
