@@ -9,7 +9,7 @@ for b in 1 2 3 4 5 6; do
   python3 03b_sweep.py --jobs 4 > ../data/raw/batch.log; cat ../data/raw/batch.log >> ../data/raw/run.log
   grep -E "batch done|RATE_LIMIT|FAIL|songs to sweep" ../data/raw/batch.log
   grep -q RATE_LIMIT ../data/raw/batch.log && { echo "STOPPED: rate limit"; exit 2; }
-  left=$(python3 -c "import json,os;print(sum(1 for s in json.load(open('../data/songs.json')) if not os.path.exists(f'../data/raw/mentions/{s[\"id\"]}.json')))")
+  left=$(python3 -c "import json,os;print(sum(1 for s in json.load(open('../data/songs.json')) if os.path.exists(f'../data/raw/lyrics/{s[\"id\"]}.json') and not os.path.exists(f'../data/raw/mentions/{s[\"id\"]}.json')))")
   echo "songs left: $left"
   [ "$left" = "0" ] && break
 done

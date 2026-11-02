@@ -19,11 +19,13 @@ out = []
 for name, year, ids in PROJECTS:
     tracks, cover = [], None
     for aid in ids:
-        a = json.loads(get(f"https://genius.com/api/albums/{aid}"))["response"]["album"]
+        b = get(f"https://genius.com/api/albums/{aid}")
+        if b is None: print("album 404, skipped:", aid); continue
+        a = json.loads(b)["response"]["album"]
         cover = cover or a.get("cover_art_url")
         page = 1
         while page:
-            r = json.loads(get(f"https://genius.com/api/albums/{aid}/tracks?per_page=50&page={page}"))["response"]
+            r = json.loads(get(f"https://genius.com/api/albums/{aid}/tracks?per_page=50&page={page}") or b'{"response":{"tracks":[]}}')["response"]
             for t in r["tracks"]:
                 s = t["song"]
                 if s["id"] not in {x["id"] for x in tracks}:

@@ -30,7 +30,8 @@ for s in cands:
     i = s["id"]
     dp = RAW / "songs" / f"{i}.json"
     if not dp.exists():
-        d = json.loads(get(f"https://genius.com/api/songs/{i}"))["response"]["song"]
+        d = json.loads(get(f"https://genius.com/api/songs/{i}") or b'{"response":{"song":null}}')["response"]["song"]
+        if d is None: print("404, skipped:", s["title"]); continue
         jdump({k: d.get(k) for k in ["id","title","title_with_featured","full_title","url","path","release_date","release_date_components","song_art_image_url","primary_artist","featured_artists","album","lyrics_state","annotation_count","pyongs_count","stats","language","instrumental"]}, dp)
         time.sleep(0.45)
     d = jload(dp)

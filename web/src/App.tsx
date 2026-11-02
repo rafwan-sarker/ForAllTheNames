@@ -15,7 +15,7 @@ export default function App() {
   const d = useData(); const { guests, setGuests } = useGuests();
   const [sp, setSp] = useSearchParams();
   const cat = (CATEGORIES.some((c) => c.id === sp.get("c")) ? sp.get("c") : "place") as Category;
-  const album = sp.get("p") ?? "";
+  const album = d.albums.some((a) => a.id === sp.get("p")) ? sp.get("p")! : "";
   const sel = sp.get("n");
   const [searching, setSearching] = useState(false);
   const [about, setAbout] = useState(false);
@@ -26,6 +26,8 @@ export default function App() {
     for (const [k, v] of Object.entries(patch)) { if (v) next.set(k, v); else next.delete(k); }
     setSp(next);
   };
+  // jump to any name from a lyric highlight; album filter dropped so the name is always found
+  const goTo = (c: Category, n: string) => set({ c, n, p: null, r: null });
   useEffect(() => {
     const h = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); setSearching((o) => !o); }
@@ -67,8 +69,8 @@ export default function App() {
       <nav className="rail" aria-label="Albums">
         {cat === "place" && (
           <div className="rtog">
-            <button className={railMode === "album" ? "on" : ""} onClick={() => set({ r: null })}>By album</button>
-            <button className={railMode === "place" ? "on" : ""} onClick={() => set({ r: "place" })}>By place</button>
+            <button className={railMode === "album" ? "on" : ""} onClick={() => set({ r: null })}>ALBUMS</button>
+            <button className={railMode === "place" ? "on" : ""} onClick={() => set({ r: "place" })}>PLACES</button>
           </div>
         )}
         {railMode === "place" ? <List key={album} rows={rows} selected={sel} onPick={(n) => set({ n })} /> : <>
@@ -82,12 +84,12 @@ export default function App() {
       <main className={"stage" + (cat === "place" ? " wide" : "")}>
         {cat === "place"
           ? <PlacesView d={d} all={allPlaces} ms={ms} songs={songs} albums={albums} album={activeAlbum} selected={sel}
-              onPick={(n) => set({ n })} onAlbum={(id) => set({ p: id, n: null })} onBack={() => set(sel ? { n: null } : { p: null })} />
+              onPick={(n) => set({ n })} onAlbum={(id) => set({ p: id, n: null })} onBack={() => set(sel ? { n: null } : { p: null })} go={goTo} />
           : <Board key={cat + "|" + album} ms={ms} songs={songs} albums={albums} order={d.albums.map((a) => a.id)} title={activeAlbum ? `${label.plural} on ${activeAlbum.name}` : label.plural} selected={sel} onPick={(n) => set({ n })} />}
       </main>
 
       {cat !== "place" && sel && selMs.length > 0 && <aside className="panel">
-        <Detail name={sel} ms={selMs} songs={songs} albums={albums} onBack={() => set({ n: null })} />
+        <Detail name={sel} ms={selMs} songs={songs} albums={albums} onBack={() => set({ n: null })} all={d.mentions} go={goTo} />
       </aside>}
 
       {about && <About onClose={() => setAbout(false)} songs={d.songs.length} />}

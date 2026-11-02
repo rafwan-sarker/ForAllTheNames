@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { count, kindLabel, pct, rankBySongs } from "../data";
-import type { Album, Data, Mention, Song } from "../types";
+import type { Album, Category, Data, Mention, Song } from "../types";
 import MapView from "./MapView";
 import { SongCards } from "./Panel";
 
@@ -38,9 +38,9 @@ function Years({ ms, songs }: { ms: Mention[]; songs: Map<number, Song> }) {
   );
 }
 
-export default function PlacesView({ d, all, ms, songs, albums, album, selected, onPick, onAlbum, onBack }: {
+export default function PlacesView({ d, all, ms, songs, albums, album, selected, onPick, onAlbum, onBack, go }: {
   d: Data; all: Mention[]; ms: Mention[]; songs: Map<number, Song>; albums: Map<string, Album>; album?: Album; selected: string | null;
-  onPick: (n: string) => void; onAlbum: (id: string) => void; onBack: () => void;
+  onPick: (n: string) => void; onAlbum: (id: string) => void; onBack: () => void; go: (c: Category, n: string) => void;
 }) {
   const rows = useMemo(() => rankBySongs(ms).map(([k, n]) => [k, n] as [string, number]), [ms]);
   const selMs = useMemo(() => (selected ? ms.filter((m) => m.name === selected) : []), [ms, selected]);
@@ -62,7 +62,7 @@ export default function PlacesView({ d, all, ms, songs, albums, album, selected,
         <div className="kicker">Place · {kindLabel(p?.kind ?? "")}{p?.country ? ` · ${p.country}` : ""}</div>
         <h2 className="ptitle">{selected}</h2>
         <Tiles items={[["Mentions", String(selMs.length)], ["Songs", String(new Set(selMs.map((m) => m.song)).size)], ["First", yrs.length ? String(Math.min(...yrs)) : "—"], ["Latest", yrs.length ? String(Math.max(...yrs)) : "—"]]} />
-        <section className="psec"><h3>Songs</h3><SongCards ms={[...selMs].sort((a, b) => (songs.get(a.song)?.year ?? 0) - (songs.get(b.song)?.year ?? 0))} songs={songs} albums={albums} /></section>
+        <section className="psec"><h3>Songs</h3><SongCards ms={[...selMs].sort((a, b) => (songs.get(a.song)?.year ?? 0) - (songs.get(b.song)?.year ?? 0))} songs={songs} albums={albums} all={d.mentions} go={go} /></section>
       </>
     );
   } else if (album) {
@@ -75,7 +75,7 @@ export default function PlacesView({ d, all, ms, songs, albums, album, selected,
         </div>
         <Tiles items={[["Mentions", String(ms.length)], ["Unique places", String(rows.length)], ["Songs with a place", pct(withPlace, songTotal), `${withPlace} of ${songTotal}`]]} />
         <section className="psec"><h3>Top places</h3><small className="muted">by songs</small><Bars rows={rows} onPick={onPick} /></section>
-        <section className="psec"><h3>Songs</h3><SongCards ms={[...ms].sort((a, b) => a.song - b.song || a.line - b.line)} songs={songs} albums={albums} /></section>
+        <section className="psec"><h3>Songs</h3><SongCards ms={[...ms].sort((a, b) => a.song - b.song || a.line - b.line)} songs={songs} albums={albums} all={d.mentions} go={go} /></section>
       </>
     );
   } else {

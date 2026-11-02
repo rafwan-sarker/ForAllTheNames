@@ -48,7 +48,8 @@ def fix_lines(mentions, lines):
     bad = 0
     for m in mentions:
         t = norm(m.get("text", ""))
-        ln = int(m.get("line") or 0)
+        mm = re.match(r"\s*(\d+)", str(m.get("line") or "0")); ln = int(mm.group(1)) if mm else 0  # model may write "4-5"
+        m["line"] = ln
         if t and 0 < ln <= len(lines) and t in norm(lines[ln - 1]): continue
         cands = [i + 1 for i, l in enumerate(lines) if t and t in norm(l)]
         if cands: m["line"] = min(cands, key=lambda i: abs(i - ln)); m["line_fixed"] = True

@@ -634,5 +634,17 @@
   "lng": -118.3797,
   "country": "United States",
   "note": "Sunset Strip, LA"
+ },
+ "W Hotel": {
+  "lat": null,
+  "lng": null,
+  "country": "United States",
+  "note": "hotel chain, city not stated in the lyric; off the map"
+ },
+ "Ritz-Carlton": {
+  "lat": null,
+  "lng": null,
+  "country": "United States",
+  "note": "hotel chain, city not stated in the lyric; off the map"
  }
 }

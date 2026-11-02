@@ -13,6 +13,8 @@ def run(song, srcdir, outdir):
     out = RAW / outdir / f"{song['id']}.json"
     if out.exists(): return "skip"
     lyr = jload(RAW / "lyrics" / f"{song['id']}.json")["lyrics"]
+    if not lyr:
+        jdump({"id": song["id"], "mentions": [], "note": "no lyrics"}, out); return "nolyrics"
     first = jload(RAW / srcdir / f"{song['id']}.json")["mentions"]
     found = "\n".join(f"line {m.get('line')}: {m.get('text')} -> {m.get('category')}: {m.get('name')}" for m in first) or "(nothing)"
     msg = ex.USER.format(title=song["title"], album=song.get("album_name") or "single", year=song.get("album_year") or song.get("year") or "?", lyrics=ex.numbered(lyr)) + "\n\nALREADY FOUND:\n" + found

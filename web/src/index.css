@@ -242,3 +242,7 @@ a { color: inherit; text-decoration: none; }
 .cats button:hover { color: var(--gold); }
 .cats button.on, .cats button.on:hover { color: var(--bg); }
 .tools .icon, .toggle { color: var(--ink); }
+.chead small.who2 { color: var(--ink); opacity: .8; }
+mark[role="button"] { cursor: pointer; border-radius: 2px; text-decoration: underline; text-decoration-color: oklch(0.8 0.12 85 / .45); text-underline-offset: 3px; }
+mark[role="button"]:hover { text-decoration-color: var(--gold); background: oklch(0.8 0.12 85 / .12); }
+.rtog button { letter-spacing: .08em; font-weight: 800; }
