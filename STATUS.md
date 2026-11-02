@@ -1,7 +1,7 @@
 # Status
 
 ## Now
-- 2026-11-02: LIVE at https://for-all-the-names.vercel.app (Vercel project rsarkerai-8352s-projects/for-all-the-names, deployed from web/ with `vercel deploy --prod`). Code on private repo rafwan-sarker/drizzy-world, branch feature/site-v1.
+- 2026-11-02: LIVE at https://for-all-the-names.vercel.app (Vercel project rsarkerai-8352s-projects/for-all-the-names, deployed from web/ with `vercel deploy --prod`). Code on private repo rafwan-sarker/drakenames, branch feature/site-v1.
 
 ## Next
 1. Raf: check on a real iPhone (Safari); merge feature/site-v1 into main.
@@ -12,7 +12,7 @@
 - none
 
 ## Decisions
-- 2026-11-02: Project folder renamed drizzy-world -> ~/AI/forallthenames (Raf asked). GitHub repo name unchanged.
+- 2026-11-02: Project folder renamed drizzy-world -> ~/AI/forallthenames (Raf asked). GitHub repo renamed to rafwan-sarker/drakenames.
 - 2026-11-02: Category tabs in Rock Salt (free lookalike of the IYRTITL lettering). The real recreation "With My Woes" is personal-use only, not used.
 - 2026-11-02: Wordmark in Oswald 700, spaced caps, blue/red offset glow (ICEMAN promo look, Raf picked B); no subtitle.
 - 2026-11-02: Places view rebuilt in drizzy.world's structure (Raf's call): By album / By place rail, overview column (tiles, year chart, top lists), map right; credit line to drizzy.world. Other categories: leaderboard with album covers. Logo: Raf's Starbucks selfie (web/public/logo.jpg, Raf chose it).
