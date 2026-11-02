@@ -36,7 +36,9 @@ export default function App() {
     window.addEventListener("keydown", h); return () => window.removeEventListener("keydown", h);
   }, []);
 
-  const songs = useMemo(() => songMap(d), [d]); const albums = useMemo(() => albumMap(d), [d]);
+  const songs = useMemo(() => songMap(d), [d]);
+  // newest project first; Singles and Guest Verses (no year) at the end
+  const albumsNewest = useMemo(() => [...d.albums.filter((a) => a.year).reverse(), ...d.albums.filter((a) => !a.year)], [d]); const albums = useMemo(() => albumMap(d), [d]);
   const ms = useMemo(() => d.mentions.filter((m) => m.category === cat && (!album || songs.get(m.song)?.album === album)), [d, cat, album, songs]);
   const rows = useMemo(() => rankBySongs(ms).map(([k, n]) => [k, n] as [string, number]), [ms]);
   const selMs = useMemo(() => (sel ? ms.filter((m) => m.name === sel) : []), [ms, sel]);
@@ -77,7 +79,7 @@ export default function App() {
         <button className={"rall" + (!album ? " on" : "")} onClick={() => set({ p: null, n: null })}>
           <span>All albums</span><span className="ct">{[...albumCounts.values()].reduce((a, b) => a + b, 0).toLocaleString()}</span>
         </button>
-        <Albums albums={d.albums} counts={albumCounts} active={album} onPick={(id) => set({ p: id === album ? null : id, n: null })} />
+        <Albums albums={albumsNewest} counts={albumCounts} active={album} onPick={(id) => set({ p: id === album ? null : id, n: null })} />
         </>}
       </nav>
 
@@ -85,7 +87,7 @@ export default function App() {
         {cat === "place"
           ? <PlacesView d={d} all={allPlaces} ms={ms} songs={songs} albums={albums} album={activeAlbum} selected={sel}
               onPick={(n) => set({ n })} onAlbum={(id) => set({ p: id, n: null })} onBack={() => set(sel ? { n: null } : { p: null })} go={goTo} />
-          : <Board key={cat + "|" + album} ms={ms} songs={songs} albums={albums} order={d.albums.map((a) => a.id)} title={activeAlbum ? `${label.plural} on ${activeAlbum.name}` : label.plural} selected={sel} onPick={(n) => set({ n })}
+          : <Board key={cat + "|" + album} ms={ms} songs={songs} albums={albums} order={albumsNewest.map((a) => a.id)} title={activeAlbum ? `${label.plural} on ${activeAlbum.name}` : label.plural} selected={sel} onPick={(n) => set({ n })}
               label={label.plural} single={label.label} songTotal={activeAlbum ? activeAlbum.songCount : d.songs.length} />}
       </main>
 

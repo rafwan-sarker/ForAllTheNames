@@ -82,9 +82,11 @@ function dedupe(lines: Mention[][]) {
 }
 
 export function Detail({ name, ms, songs, albums, onBack, all, go }: { name: string; ms: Mention[]; songs: Map<number, Song>; albums: Map<string, Album>; onBack: () => void; all?: Mention[]; go?: (c: Category, n: string) => void }) {
-  const sorted = useMemo(() => [...ms].sort((a, b) => (songs.get(a.song)?.year ?? 0) - (songs.get(b.song)?.year ?? 0) || a.song - b.song || a.line - b.line), [ms, songs]);
+  // newest songs first
+  const sorted = useMemo(() => [...ms].sort((a, b) => (songs.get(b.song)?.year ?? 0) - (songs.get(a.song)?.year ?? 0) || b.song - a.song || a.line - b.line), [ms, songs]);
   const yrs = sorted.map((m) => songs.get(m.song)?.year).filter(Boolean) as number[];
-  const span = yrs.length ? (yrs[0] === yrs[yrs.length - 1] ? `${yrs[0]}` : `${yrs[0]} to ${yrs[yrs.length - 1]}`) : "";
+  const lo = yrs.length ? Math.min(...yrs) : 0, hi = yrs.length ? Math.max(...yrs) : 0;
+  const span = yrs.length ? (lo === hi ? `${lo}` : `${lo} to ${hi}`) : "";
   return (
     <>
       <button className="back" onClick={onBack}>← All</button>
