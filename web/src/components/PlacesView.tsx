@@ -19,11 +19,11 @@ function Bars({ rows, onPick, fmt, max = 10 }: { rows: [string, number][]; onPic
   );
 }
 
-function Tiles({ items }: { items: [string, string, string?][] }) {
+export function Tiles({ items }: { items: [string, string, string?][] }) {
   return <div className="tiles">{items.map(([l, v, sub]) => <div className="tile" key={l}><span>{l}</span><b>{v}</b>{sub && <small>{sub}</small>}</div>)}</div>;
 }
 
-function Years({ ms, songs }: { ms: Mention[]; songs: Map<number, Song> }) {
+export function Years({ ms, songs }: { ms: Mention[]; songs: Map<number, Song> }) {
   const ys = [...songs.values()].map((s) => s.year).filter((y): y is number => !!y);
   const y0 = Math.min(...ys), y1 = Math.max(...ys);
   const by = new Map<number, number>(); let dated = 0;

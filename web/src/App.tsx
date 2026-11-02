@@ -85,7 +85,8 @@ export default function App() {
         {cat === "place"
           ? <PlacesView d={d} all={allPlaces} ms={ms} songs={songs} albums={albums} album={activeAlbum} selected={sel}
               onPick={(n) => set({ n })} onAlbum={(id) => set({ p: id, n: null })} onBack={() => set(sel ? { n: null } : { p: null })} go={goTo} />
-          : <Board key={cat + "|" + album} ms={ms} songs={songs} albums={albums} order={d.albums.map((a) => a.id)} title={activeAlbum ? `${label.plural} on ${activeAlbum.name}` : label.plural} selected={sel} onPick={(n) => set({ n })} />}
+          : <Board key={cat + "|" + album} ms={ms} songs={songs} albums={albums} order={d.albums.map((a) => a.id)} title={activeAlbum ? `${label.plural} on ${activeAlbum.name}` : label.plural} selected={sel} onPick={(n) => set({ n })}
+              label={label.plural} single={label.label} songTotal={activeAlbum ? activeAlbum.songCount : d.songs.length} />}
       </main>
 
       {cat !== "place" && sel && selMs.length > 0 && <aside className="panel">

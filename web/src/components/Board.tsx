@@ -1,10 +1,12 @@
 import { useMemo, useState } from "react";
-import { count, kindLabel } from "../data";
+import { count, kindLabel, pct } from "../data";
+import { Tiles, Years } from "./PlacesView";
 import type { Album, Mention, Song } from "../types";
 
 /** Ranked names, each followed by the covers of the albums he says it on (oldest first). */
-export default function Board({ ms, songs, albums, order, title, selected, onPick }: {
+export default function Board({ ms, songs, albums, order, title, selected, onPick, label, single, songTotal }: {
   ms: Mention[]; songs: Map<number, Song>; albums: Map<string, Album>; order: string[]; title: string; selected: string | null; onPick: (n: string) => void;
+  label: string; single: string; songTotal: number;
 }) {
   const [f, setF] = useState(""); const [limit, setLimit] = useState(60);
   const rows = useMemo(() => {
@@ -17,6 +19,8 @@ export default function Board({ ms, songs, albums, order, title, selected, onPic
       return { name, n: new Set(list.map((m) => m.song)).size, total: list.length, kind: count(list, (m) => m.kind)[0]?.[0] ?? "", covers };
     }).sort((a, b) => b.n - a.n || b.total - a.total || a.name.localeCompare(b.name));
   }, [ms, songs, albums, order]);
+  const withIt = new Set(ms.map((m) => m.song)).size;
+  const topKind = count(ms, (m) => kindLabel(m.kind))[0];
   const shown = rows.filter((r) => !f || r.name.toLowerCase().includes(f.toLowerCase()));
   return (
     <div className="board">
@@ -24,6 +28,12 @@ export default function Board({ ms, songs, albums, order, title, selected, onPic
         <h1>{title}</h1>
         <span className="muted">{rows.length} names · ranked by number of songs</span>
         <input className="bfilter" placeholder="Find a name" value={f} onChange={(e) => setF(e.target.value)} />
+      </div>
+      <div className="bstats">
+        <Tiles items={[["Mentions", ms.length.toLocaleString()], ["Unique " + label.toLowerCase(), String(rows.length)],
+          [`Songs with ${/^[aeiou]/i.test(single) ? "an" : "a"} ${single.toLowerCase()}`, pct(withIt, songTotal), `${withIt} of ${songTotal}`],
+          ["Most common", topKind ? topKind[0] : "—", topKind ? `${topKind[1]} mentions` : ""]]} />
+        <Years ms={ms} songs={songs} />
       </div>
       <ol>
         {shown.slice(0, limit).map((r) => (
