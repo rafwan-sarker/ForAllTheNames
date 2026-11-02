@@ -1,14 +1,15 @@
 # Status
 
 ## Now
-- 2026-11-02: v1 built and checked: 606 songs, 5,701 mentions; site works on desktop and phone width; code review fixes applied; About panel, tab icon, share image (og.png). Committed on feature/site-v1, pushed to private repo rafwan-sarker/drizzy-world.
+- 2026-11-02: LIVE at https://for-all-the-names.vercel.app (Vercel project rsarkerai-8352s-projects/for-all-the-names, deployed from web/ with `vercel deploy --prod`). Code on private repo rafwan-sarker/drizzy-world, branch feature/site-v1.
 
 ## Next
-1. Raf: OK to deploy publicly on Vercel? Then set og:image to the absolute URL and VITE_FEEDBACK_URL (optional).
-2. Merge feature/site-v1 into main after Raf looks it over.
+1. Merge feature/site-v1 into main.
+2. Optional: set VITE_FEEDBACK_URL in Vercel env for the "Missed a name?" link; custom domain.
+3. Pipeline cleanup from review: shared call_claude/fetch helpers in common.py; lyrics.ovh fallback only by exact artist.
 
 ## Blockers
-- Raf: deploy decision; feedback link destination (email/form/social) if wanted.
+- none
 
 ## Decisions
 - 2026-11-02: Category tabs in Rock Salt (free lookalike of the IYRTITL lettering). The real recreation "With My Woes" is personal-use only, not used.
