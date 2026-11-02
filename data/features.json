@@ -1,0 +1,933 @@
+[
+ {
+  "id": 3876994,
+  "title": "SICKO MODE",
+  "primary": "Travis Scott",
+  "pageviews": 10334541,
+  "chars": 1888
+ },
+ {
+  "id": 2398213,
+  "title": "Work",
+  "primary": "Rihanna",
+  "pageviews": 8433382,
+  "chars": 1475
+ },
+ {
+  "id": 93539,
+  "title": "Fuckin’ Problems",
+  "primary": "A$AP Rocky",
+  "pageviews": 8109044,
+  "chars": 2913
+ },
+ {
+  "id": 92856,
+  "title": "Poetic Justice",
+  "primary": "Kendrick Lamar",
+  "pageviews": 5005832,
+  "chars": 1064
+ },
+ {
+  "id": 555359,
+  "title": "Only",
+  "primary": "Nicki Minaj",
+  "pageviews": 3943063,
+  "chars": 1863
+ },
+ {
+  "id": 105686,
+  "title": "Love Me",
+  "primary": "Lil Wayne",
+  "pageviews": 3609008,
+  "chars": 1249
+ },
+ {
+  "id": 693878,
+  "title": "Blessings",
+  "primary": "Big Sean",
+  "pageviews": 3323983,
+  "chars": 1880
+ },
+ {
+  "id": 3702977,
+  "title": "Yes Indeed",
+  "primary": "Lil Baby",
+  "pageviews": 2753148,
+  "chars": 862
+ },
+ {
+  "id": 2442052,
+  "title": "Come and See Me",
+  "primary": "PARTYNEXTDOOR",
+  "pageviews": 2671601,
+  "chars": 1307
+ },
+ {
+  "id": 622818,
+  "title": "Truffle Butter",
+  "primary": "Nicki Minaj",
+  "pageviews": 2652640,
+  "chars": 891
+ },
+ {
+  "id": 5111026,
+  "title": "Life Is Good",
+  "primary": "Future",
+  "pageviews": 2546310,
+  "chars": 1304
+ },
+ {
+  "id": 4533406,
+  "title": "No Guidance",
+  "primary": "Chris Brown",
+  "pageviews": 2341411,
+  "chars": 2055
+ },
+ {
+  "id": 1781,
+  "title": "All of the Lights",
+  "primary": "Kanye West",
+  "pageviews": 2298722,
+  "chars": 332
+ },
+ {
+  "id": 72995,
+  "title": "No Lie",
+  "primary": "2 Chainz",
+  "pageviews": 2185724,
+  "chars": 2570
+ },
+ {
+  "id": 62991,
+  "title": "Stay Schemin’",
+  "primary": "Rick Ross",
+  "pageviews": 2177791,
+  "chars": 1763
+ },
+ {
+  "id": 419570,
+  "title": "Believe Me",
+  "primary": "Lil Wayne",
+  "pageviews": 2147165,
+  "chars": 2783
+ },
+ {
+  "id": 477863,
+  "title": "Recognize",
+  "primary": "PARTYNEXTDOOR",
+  "pageviews": 2096234,
+  "chars": 994
+ },
+ {
+  "id": 299098,
+  "title": "Mine",
+  "primary": "Beyoncé",
+  "pageviews": 2021677,
+  "chars": 3333
+ },
+ {
+  "id": 2486863,
+  "title": "For Free",
+  "primary": "DJ Khaled",
+  "pageviews": 1971118,
+  "chars": 1903
+ },
+ {
+  "id": 3017997,
+  "title": "No Frauds",
+  "primary": "Nicki Minaj",
+  "pageviews": 1907999,
+  "chars": 717
+ },
+ {
+  "id": 4125712,
+  "title": "Going Bad",
+  "primary": "Meek Mill",
+  "pageviews": 1885939,
+  "chars": 1700
+ },
+ {
+  "id": 2024226,
+  "title": "R.I.C.O.",
+  "primary": "Meek Mill",
+  "pageviews": 1865127,
+  "chars": 1342
+ },
+ {
+  "id": 261,
+  "title": "BedRock",
+  "primary": "Young Money",
+  "pageviews": 1843039,
+  "chars": 416
+ },
+ {
+  "id": 75898,
+  "title": "Pop That",
+  "primary": "French Montana",
+  "pageviews": 1792108,
+  "chars": 1921
+ },
+ {
+  "id": 80557,
+  "title": "Diced Pineapples",
+  "primary": "Rick Ross",
+  "pageviews": 1782026,
+  "chars": 946
+ },
+ {
+  "id": 50025,
+  "title": "I’m On One",
+  "primary": "DJ Khaled",
+  "pageviews": 1732011,
+  "chars": 2596
+ },
+ {
+  "id": 3433244,
+  "title": "Walk It Talk It",
+  "primary": "Migos",
+  "pageviews": 1690841,
+  "chars": 575
+ },
+ {
+  "id": 3452330,
+  "title": "Look Alive",
+  "primary": "BlocBoy JB",
+  "pageviews": 1660973,
+  "chars": 2295
+ },
+ {
+  "id": 140752,
+  "title": "No New Friends",
+  "primary": "DJ Khaled",
+  "pageviews": 1589965,
+  "chars": 3175
+ },
+ {
+  "id": 494172,
+  "title": "Tuesday",
+  "primary": "iLoveMakonnen",
+  "pageviews": 1470286,
+  "chars": 760
+ },
+ {
+  "id": 5611509,
+  "title": "Only You Freestyle",
+  "primary": "Headie One",
+  "pageviews": 1428169,
+  "chars": 2261
+ },
+ {
+  "id": 53819,
+  "title": "She Will",
+  "primary": "Lil Wayne",
+  "pageviews": 1417137,
+  "chars": 2606
+ },
+ {
+  "id": 2136824,
+  "title": "100",
+  "primary": "The Game",
+  "pageviews": 1402271,
+  "chars": 2289
+ },
+ {
+  "id": 54471,
+  "title": "The Zone",
+  "primary": "The Weeknd",
+  "pageviews": 1389677,
+  "chars": 1036
+ },
+ {
+  "id": 9368450,
+  "title": "MELTDOWN",
+  "primary": "Travis Scott",
+  "pageviews": 1377994,
+  "chars": 1680
+ },
+ {
+  "id": 324980,
+  "title": "Who Do You Love?",
+  "primary": "YG",
+  "pageviews": 1371057,
+  "chars": 1113
+ },
+ {
+  "id": 2213109,
+  "title": "Where Ya At",
+  "primary": "Future",
+  "pageviews": 1368921,
+  "chars": 878
+ },
+ {
+  "id": 1812,
+  "title": "What’s My Name?",
+  "primary": "Rihanna",
+  "pageviews": 1334554,
+  "chars": 832
+ },
+ {
+  "id": 3075944,
+  "title": "MIA",
+  "primary": "Bad Bunny",
+  "pageviews": 1305775,
+  "chars": 960
+ },
+ {
+  "id": 7945037,
+  "title": "WAIT FOR U",
+  "primary": "Future",
+  "pageviews": 1287875,
+  "chars": 1819
+ },
+ {
+  "id": 5522492,
+  "title": "GREECE",
+  "primary": "DJ Khaled",
+  "pageviews": 1185902,
+  "chars": 2348
+ },
+ {
+  "id": 5774099,
+  "title": "POPSTAR",
+  "primary": "DJ Khaled",
+  "pageviews": 1177569,
+  "chars": 3031
+ },
+ {
+  "id": 2933001,
+  "title": "Both",
+  "primary": "Gucci Mane",
+  "pageviews": 1158315,
+  "chars": 1235
+ },
+ {
+  "id": 2173937,
+  "title": "Drama",
+  "primary": "Roy Woods",
+  "pageviews": 1132033,
+  "chars": 1064
+ },
+ {
+  "id": 714679,
+  "title": "Shutdown",
+  "primary": "Skepta",
+  "pageviews": 1051564,
+  "chars": 252
+ },
+ {
+  "id": 1932,
+  "title": "In the Morning",
+  "primary": "J. Cole",
+  "pageviews": 1002693,
+  "chars": 1199
+ },
+ {
+  "id": 348711,
+  "title": "Odio",
+  "primary": "Romeo Santos",
+  "pageviews": 996710,
+  "chars": 1109
+ },
+ {
+  "id": 2859956,
+  "title": "Used to This",
+  "primary": "Future",
+  "pageviews": 977069,
+  "chars": 1006
+ },
+ {
+  "id": 2045,
+  "title": "Moment 4 Life",
+  "primary": "Nicki Minaj",
+  "pageviews": 969812,
+  "chars": 1129
+ },
+ {
+  "id": 73301,
+  "title": "Amen",
+  "primary": "Meek Mill",
+  "pageviews": 941112,
+  "chars": 2923
+ },
+ {
+  "id": 3916993,
+  "title": "No Stylist",
+  "primary": "French Montana",
+  "pageviews": 905501,
+  "chars": 546
+ },
+ {
+  "id": 6809866,
+  "title": "Seeing Green",
+  "primary": "Nicki Minaj",
+  "pageviews": 901431,
+  "chars": 1727
+ },
+ {
+  "id": 2554175,
+  "title": "No Shopping",
+  "primary": "French Montana",
+  "pageviews": 860560,
+  "chars": 1878
+ },
+ {
+  "id": 505089,
+  "title": "DnF",
+  "primary": "Preme",
+  "pageviews": 738491,
+  "chars": 2631
+ },
+ {
+  "id": 765,
+  "title": "Aston Martin Music",
+  "primary": "Rick Ross",
+  "pageviews": 737594,
+  "chars": 2635
+ },
+ {
+  "id": 3131793,
+  "title": "No Complaints",
+  "primary": "Metro Boomin",
+  "pageviews": 736136,
+  "chars": 908
+ },
+ {
+  "id": 3995556,
+  "title": "Never Recover",
+  "primary": "Lil Baby",
+  "pageviews": 672017,
+  "chars": 1466
+ },
+ {
+  "id": 7902082,
+  "title": "Churchill Downs",
+  "primary": "Jack Harlow",
+  "pageviews": 629437,
+  "chars": 2688
+ },
+ {
+  "id": 427679,
+  "title": "2 On / Thotful",
+  "primary": "OB O’Brien",
+  "pageviews": 589974,
+  "chars": 2256
+ },
+ {
+  "id": 4720076,
+  "title": "Gold Roses",
+  "primary": "Rick Ross",
+  "pageviews": 579092,
+  "chars": 2630
+ },
+ {
+  "id": 1646,
+  "title": "Every Girl",
+  "primary": "Young Money",
+  "pageviews": 563947,
+  "chars": 1217
+ },
+ {
+  "id": 1828489,
+  "title": "Un-Thinkable (I’m Ready)",
+  "primary": "Alicia Keys",
+  "pageviews": 563595,
+  "chars": 1723
+ },
+ {
+  "id": 10488353,
+  "title": "Wah Gwan Delilah",
+  "primary": "Snowd4y",
+  "pageviews": 559832,
+  "chars": 408
+ },
+ {
+  "id": 6710158,
+  "title": "Solid",
+  "primary": "Young Stoner Life",
+  "pageviews": 522621,
+  "chars": 1436
+ },
+ {
+  "id": 2472621,
+  "title": "Why You Always Hatin?",
+  "primary": "YG",
+  "pageviews": 510737,
+  "chars": 647
+ },
+ {
+  "id": 2956611,
+  "title": "Come Closer",
+  "primary": "Wizkid",
+  "pageviews": 485497,
+  "chars": 597
+ },
+ {
+  "id": 10419894,
+  "title": "U My Everything",
+  "primary": "Sexyy Red",
+  "pageviews": 484793,
+  "chars": 1828
+ },
+ {
+  "id": 176865,
+  "title": "Over Here",
+  "primary": "PARTYNEXTDOOR",
+  "pageviews": 469696,
+  "chars": 1408
+ },
+ {
+  "id": 6017383,
+  "title": "Mr. Right Now",
+  "primary": "21 Savage",
+  "pageviews": 457356,
+  "chars": 937
+ },
+ {
+  "id": 9354510,
+  "title": "SIRENS",
+  "primary": "Travis Scott",
+  "pageviews": 431560,
+  "chars": 217
+ },
+ {
+  "id": 633642,
+  "title": "Schemin’ Up",
+  "primary": "OB O’Brien",
+  "pageviews": 410649,
+  "chars": 3926
+ },
+ {
+  "id": 7231233,
+  "title": "P power",
+  "primary": "Gunna",
+  "pageviews": 405352,
+  "chars": 655
+ },
+ {
+  "id": 492278,
+  "title": "Grindin’",
+  "primary": "Lil Wayne",
+  "pageviews": 405350,
+  "chars": 1200
+ },
+ {
+  "id": 49157,
+  "title": "It’s Good",
+  "primary": "Lil Wayne",
+  "pageviews": 400272,
+  "chars": 670
+ },
+ {
+  "id": 2831905,
+  "title": "Big Amount",
+  "primary": "2 Chainz",
+  "pageviews": 387855,
+  "chars": 1169
+ },
+ {
+  "id": 7032239,
+  "title": "Over the Top",
+  "primary": "Smiley",
+  "pageviews": 383011,
+  "chars": 1623
+ },
+ {
+  "id": 3402324,
+  "title": "Family Feud",
+  "primary": "Lil Wayne",
+  "pageviews": 382391,
+  "chars": 1589
+ },
+ {
+  "id": 6894107,
+  "title": "Having Our Way",
+  "primary": "Migos",
+  "pageviews": 344294,
+  "chars": 2919
+ },
+ {
+  "id": 7945048,
+  "title": "I’M ON ONE",
+  "primary": "Future",
+  "pageviews": 335871,
+  "chars": 1553
+ },
+ {
+  "id": 6962250,
+  "title": "WASTING TIME",
+  "primary": "Brent Faiyaz",
+  "pageviews": 335698,
+  "chars": 1505
+ },
+ {
+  "id": 83754,
+  "title": "Enough Said",
+  "primary": "Aaliyah",
+  "pageviews": 326421,
+  "chars": 1999
+ },
+ {
+  "id": 5043616,
+  "title": "LOYAL",
+  "primary": "PARTYNEXTDOOR",
+  "pageviews": 324986,
+  "chars": 781
+ },
+ {
+  "id": 388124,
+  "title": "The Blanguage",
+  "primary": "Young Thug",
+  "pageviews": 324111,
+  "chars": 4506
+ },
+ {
+  "id": 2688225,
+  "title": "100it Racks",
+  "primary": "DJ ESCO",
+  "pageviews": 321557,
+  "chars": 3327
+ },
+ {
+  "id": 5166190,
+  "title": "Oprah’s Bank Account",
+  "primary": "Lil Yachty",
+  "pageviews": 321030,
+  "chars": 488
+ },
+ {
+  "id": 2916012,
+  "title": "Issa",
+  "primary": "21 Savage",
+  "pageviews": 308078,
+  "chars": 1019
+ },
+ {
+  "id": 7290862,
+  "title": "Bubbly",
+  "primary": "Young Thug",
+  "pageviews": 304589,
+  "chars": 839
+ },
+ {
+  "id": 77620,
+  "title": "Right Here",
+  "primary": "Justin Bieber",
+  "pageviews": 300528,
+  "chars": 838
+ },
+ {
+  "id": 131653,
+  "title": "No Guns Allowed",
+  "primary": "Snoop Lion",
+  "pageviews": 290313,
+  "chars": 719
+ },
+ {
+  "id": 2130,
+  "title": "july",
+  "primary": "Jhené Aiko",
+  "pageviews": 289410,
+  "chars": 1423
+ },
+ {
+  "id": 3110340,
+  "title": "To the Max",
+  "primary": "DJ Khaled",
+  "pageviews": 279255,
+  "chars": 918
+ },
+ {
+  "id": 7097006,
+  "title": "Betrayal",
+  "primary": "Trippie Redd",
+  "pageviews": 272704,
+  "chars": 1302
+ },
+ {
+  "id": 2172771,
+  "title": "My Love",
+  "primary": "Majid Jordan",
+  "pageviews": 240441,
+  "chars": 663
+ },
+ {
+  "id": 6209991,
+  "title": "B.B. King Freestyle",
+  "primary": "Lil Wayne",
+  "pageviews": 228626,
+  "chars": 2230
+ },
+ {
+  "id": 208935,
+  "title": "I Do It",
+  "primary": "2 Chainz",
+  "pageviews": 226187,
+  "chars": 1184
+ },
+ {
+  "id": 4014123,
+  "title": "FLIP THE SWITCH",
+  "primary": "Quavo",
+  "pageviews": 226115,
+  "chars": 562
+ },
+ {
+  "id": 69579,
+  "title": "Champion",
+  "primary": "Nicki Minaj",
+  "pageviews": 221563,
+  "chars": 764
+ },
+ {
+  "id": 480,
+  "title": "Say Something",
+  "primary": "Timbaland",
+  "pageviews": 221311,
+  "chars": 2335
+ },
+ {
+  "id": 3091,
+  "title": "Made Men",
+  "primary": "Rick Ross",
+  "pageviews": 216230,
+  "chars": 1959
+ },
+ {
+  "id": 3782528,
+  "title": "Bigger Than You",
+  "primary": "2 Chainz",
+  "pageviews": 214567,
+  "chars": 506
+ },
+ {
+  "id": 2855677,
+  "title": "Jungle",
+  "primary": "H.E.R.",
+  "pageviews": 214091,
+  "chars": 586
+ },
+ {
+  "id": 245,
+  "title": "Money to Blow",
+  "primary": "Birdman",
+  "pageviews": 211873,
+  "chars": 2752
+ },
+ {
+  "id": 58017,
+  "title": "Mr. Wrong",
+  "primary": "Mary J. Blige",
+  "pageviews": 210372,
+  "chars": 759
+ },
+ {
+  "id": 1357,
+  "title": "With You",
+  "primary": "Lil Wayne",
+  "pageviews": 200260,
+  "chars": 521
+ },
+ {
+  "id": 91924,
+  "title": "Us",
+  "primary": "Rick Ross",
+  "pageviews": 200098,
+  "chars": 704
+ },
+ {
+  "id": 6010051,
+  "title": "Outta Time",
+  "primary": "Bryson Tiller",
+  "pageviews": 194846,
+  "chars": 645
+ },
+ {
+  "id": 224193,
+  "title": "Cabaret",
+  "primary": "Justin Timberlake",
+  "pageviews": 191927,
+  "chars": 1506
+ },
+ {
+  "id": 9816408,
+  "title": "Needle",
+  "primary": "Nicki Minaj",
+  "pageviews": 185666,
+  "chars": 1546
+ },
+ {
+  "id": 8245178,
+  "title": "STAYING ALIVE",
+  "primary": "DJ Khaled",
+  "pageviews": 179314,
+  "chars": 1831
+ },
+ {
+  "id": 9263022,
+  "title": "Oh U Went",
+  "primary": "Young Thug",
+  "pageviews": 172501,
+  "chars": 875
+ },
+ {
+  "id": 9263017,
+  "title": "Parade on Cleveland",
+  "primary": "Young Thug",
+  "pageviews": 171405,
+  "chars": 1245
+ },
+ {
+  "id": 2489747,
+  "title": "Back on Road",
+  "primary": "Gucci Mane",
+  "pageviews": 164659,
+  "chars": 915
+ },
+ {
+  "id": 71818,
+  "title": "Waiting Up",
+  "primary": "Riz",
+  "pageviews": 164135,
+  "chars": 920
+ },
+ {
+  "id": 1339,
+  "title": "Gonorrhea",
+  "primary": "Lil Wayne",
+  "pageviews": 158146,
+  "chars": 1226
+ },
+ {
+  "id": 1891384,
+  "title": "On a Wave",
+  "primary": "Tinashe",
+  "pageviews": 156161,
+  "chars": 480
+ },
+ {
+  "id": 56395,
+  "title": "Still Got It",
+  "primary": "Tyga",
+  "pageviews": 153351,
+  "chars": 952
+ },
+ {
+  "id": 2930981,
+  "title": "Bring It Back",
+  "primary": "Trouble",
+  "pageviews": 153200,
+  "chars": 788
+ },
+ {
+  "id": 4571232,
+  "title": "Won’t Be Late",
+  "primary": "Swae Lee",
+  "pageviews": 153047,
+  "chars": 590
+ },
+ {
+  "id": 54090,
+  "title": "Good Girls Go Bad",
+  "primary": "The Game",
+  "pageviews": 146574,
+  "chars": 2413
+ },
+ {
+  "id": 12822837,
+  "title": "MR RECOUP",
+  "primary": "21 Savage",
+  "pageviews": 143990,
+  "chars": 1267
+ },
+ {
+  "id": 395255,
+  "title": "Never Satisfied",
+  "primary": "Future",
+  "pageviews": 143549,
+  "chars": 175
+ },
+ {
+  "id": 57289,
+  "title": "Round of Applause",
+  "primary": "Waka Flocka Flame",
+  "pageviews": 138814,
+  "chars": 662
+ },
+ {
+  "id": 9203250,
+  "title": "Who Told You",
+  "primary": "J Hus",
+  "pageviews": 136084,
+  "chars": 994
+ },
+ {
+  "id": 32251,
+  "title": "Fall for Your Type",
+  "primary": "Jamie Foxx",
+  "pageviews": 134909,
+  "chars": 1477
+ },
+ {
+  "id": 266799,
+  "title": "Know Bout Me",
+  "primary": "Timbaland",
+  "pageviews": 128925,
+  "chars": 865
+ },
+ {
+  "id": 108718,
+  "title": "Fo’ Real",
+  "primary": "Future",
+  "pageviews": 128790,
+  "chars": 460
+ },
+ {
+  "id": 3985365,
+  "title": "Hittas",
+  "primary": "Lil Wayne",
+  "pageviews": 128774,
+  "chars": 910
+ },
+ {
+  "id": 3073260,
+  "title": "My Chargie",
+  "primary": "Popcaan",
+  "pageviews": 118057,
+  "chars": 984
+ },
+ {
+  "id": 674,
+  "title": "Off That",
+  "primary": "JAŸ-Z",
+  "pageviews": 114891,
+  "chars": 2084
+ },
+ {
+  "id": 2717,
+  "title": "Killer",
+  "primary": "Nipsey Hussle",
+  "pageviews": 112360,
+  "chars": 1236
+ },
+ {
+  "id": 481,
+  "title": "4 My Town (Play Ball)",
+  "primary": "Birdman",
+  "pageviews": 109910,
+  "chars": 1871
+ },
+ {
+  "id": 7308550,
+  "title": "Stars Align",
+  "primary": "Majid Jordan",
+  "pageviews": 104759,
+  "chars": 1842
+ },
+ {
+  "id": 2274,
+  "title": "Poppin Bottles",
+  "primary": "T.I.",
+  "pageviews": 100919,
+  "chars": 823
+ }
+]

@@ -1,8 +1,7 @@
 #!/bin/bash
-# The definition of done for this project. Add the real checks (tests, build, lint) and
-# delete the two lines below. Until then this fails on purpose: unverified work is not done.
+# Definition of done: pipeline scripts compile, web app type-checks and builds.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-
-echo "no checks defined yet: edit scripts/verify.sh" >&2
-exit 1
+python3 -m py_compile pipeline/*.py
+cd web && npm run build --silent
+echo "verify: ok"

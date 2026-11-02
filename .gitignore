@@ -1,10 +1,7 @@
 .env
-.env.*
-!.env.example
 out/
 node_modules/
-dist/
-build/
-.venv/
+web/dist/
+data/raw/
+*.log
 __pycache__/
-.DS_Store

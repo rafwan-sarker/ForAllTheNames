@@ -1,0 +1,638 @@
+{
+ "Southern United States": {
+  "lat": 33.0,
+  "lng": -86.0,
+  "country": "United States",
+  "note": "region centre"
+ },
+ "The South": {
+  "lat": 33.0,
+  "lng": -86.0,
+  "country": "United States",
+  "note": "region centre"
+ },
+ "West Coast": {
+  "lat": 37.0,
+  "lng": -120.0,
+  "country": "United States",
+  "note": "region centre"
+ },
+ "East Coast": {
+  "lat": 39.0,
+  "lng": -76.0,
+  "country": "United States",
+  "note": "region centre"
+ },
+ "Western United States": {
+  "lat": 40.0,
+  "lng": -114.0,
+  "country": "United States",
+  "note": "region centre"
+ },
+ "Drew League": {
+  "lat": 33.944,
+  "lng": -118.283,
+  "country": "United States",
+  "note": "Washington Prep, South LA"
+ },
+ "Bollywood": {
+  "lat": 19.076,
+  "lng": 72.878,
+  "country": "India",
+  "note": "Mumbai"
+ },
+ "The Hamptons": {
+  "lat": 40.963,
+  "lng": -72.185,
+  "country": "United States",
+  "note": "manual pin"
+ },
+ "Delilah": {
+  "lat": 34.09,
+  "lng": -118.385,
+  "country": "United States",
+  "note": "West Hollywood"
+ },
+ "Club Palazzo": {
+  "lat": 43.79,
+  "lng": -79.53,
+  "country": "Canada",
+  "note": "approx, Vaughan/Toronto"
+ },
+ "DOA": {
+  "lat": 29.76,
+  "lng": -95.37,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "Diamonds of Atlanta": {
+  "lat": 33.749,
+  "lng": -84.388,
+  "country": "United States",
+  "note": "approx, Atlanta"
+ },
+ "Il Mulino": {
+  "lat": 43.69,
+  "lng": -79.4,
+  "country": "Canada",
+  "note": "approx, Toronto"
+ },
+ "Kiddie's Caribana": {
+  "lat": 43.633,
+  "lng": -79.418,
+  "country": "Canada",
+  "note": "Caribana, Lake Shore"
+ },
+ "Caribana": {
+  "lat": 43.633,
+  "lng": -79.418,
+  "country": "Canada",
+  "note": "Lake Shore Blvd"
+ },
+ "40/40 Club": {
+  "lat": 40.7436,
+  "lng": -73.989,
+  "country": "United States",
+  "note": "25th St, NYC"
+ },
+ "Treasures": {
+  "lat": 29.733,
+  "lng": -95.472,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "Palms Casino Resort": {
+  "lat": 36.1146,
+  "lng": -115.1958,
+  "country": "United States",
+  "note": "manual pin"
+ },
+ "Surf Club": {
+  "lat": 43.645,
+  "lng": -79.39,
+  "country": "Canada",
+  "note": "approx, Toronto"
+ },
+ "Jungle": {
+  "lat": 43.65,
+  "lng": -79.38,
+  "country": "Canada",
+  "note": "approx, Toronto"
+ },
+ "The Elysian Hotel": {
+  "lat": 41.8995,
+  "lng": -87.6268,
+  "country": "United States",
+  "note": "Chicago"
+ },
+ "Saint Martin": {
+  "lat": 18.07,
+  "lng": -63.05,
+  "country": "Saint Martin",
+  "note": "manual pin"
+ },
+ "Fluid Lounge": {
+  "lat": 43.646,
+  "lng": -79.395,
+  "country": "Canada",
+  "note": "approx, Toronto"
+ },
+ "Dreams": {
+  "lat": 29.76,
+  "lng": -95.4,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "St. Regis Houston": {
+  "lat": 29.7452,
+  "lng": -95.4485,
+  "country": "United States",
+  "note": "manual pin"
+ },
+ "Swish by Han": {
+  "lat": 43.66,
+  "lng": -79.42,
+  "country": "Canada",
+  "note": "approx, Toronto"
+ },
+ "Joso's": {
+  "lat": 43.6757,
+  "lng": -79.3895,
+  "country": "Canada",
+  "note": "Davenport Rd, Toronto"
+ },
+ "Pine Hill Funeral Centre": {
+  "lat": 43.716,
+  "lng": -79.3,
+  "country": "Canada",
+  "note": "Pine Hills Cemetery, Scarborough"
+ },
+ "MotorCity Casino Hotel": {
+  "lat": 42.3385,
+  "lng": -83.0688,
+  "country": "United States",
+  "note": "Detroit"
+ },
+ "Giorgio Baldi": {
+  "lat": 34.0275,
+  "lng": -118.5085,
+  "country": "United States",
+  "note": "Santa Monica"
+ },
+ "Madeo": {
+  "lat": 34.0802,
+  "lng": -118.3847,
+  "country": "United States",
+  "note": "West Hollywood"
+ },
+ "Polo Lounge": {
+  "lat": 34.0816,
+  "lng": -118.4135,
+  "country": "United States",
+  "note": "Beverly Hills Hotel"
+ },
+ "TAO": {
+  "lat": 36.1215,
+  "lng": -115.1739,
+  "country": "United States",
+  "note": "Venetian, Las Vegas"
+ },
+ "Lil Mexico": {
+  "lat": 33.71,
+  "lng": -84.41,
+  "country": "United States",
+  "note": "approx, Atlanta"
+ },
+ "Follies": {
+  "lat": 33.83,
+  "lng": -84.33,
+  "country": "United States",
+  "note": "approx, Atlanta"
+ },
+ "Hot Beats Studio": {
+  "lat": 33.8,
+  "lng": -84.39,
+  "country": "United States",
+  "note": "approx, Atlanta"
+ },
+ "Jane and Weston": {
+  "lat": 43.7,
+  "lng": -79.505,
+  "country": "Canada",
+  "note": "manual pin"
+ },
+ "Clearport": {
+  "lat": 43.677,
+  "lng": -79.624,
+  "country": "Canada",
+  "note": "Pearson airport"
+ },
+ "Ten Thousand Building": {
+  "lat": 34.0626,
+  "lng": -118.4111,
+  "country": "United States",
+  "note": "10000 Santa Monica Blvd, LA"
+ },
+ "Nikki Beach": {
+  "lat": 43.2349,
+  "lng": 6.6634,
+  "country": "France",
+  "note": "Saint-Tropez"
+ },
+ "Sega City Playdium": {
+  "lat": 43.6,
+  "lng": -79.65,
+  "country": "Canada",
+  "note": "approx, Mississauga"
+ },
+ "Santos Party House": {
+  "lat": 40.7176,
+  "lng": -74.0021,
+  "country": "United States",
+  "note": "NYC"
+ },
+ "VIP Room/VAVA Club": {
+  "lat": 43.27,
+  "lng": 6.64,
+  "country": "France",
+  "note": "approx, Saint-Tropez"
+ },
+ "Club 55": {
+  "lat": 43.237,
+  "lng": 6.664,
+  "country": "France",
+  "note": "Saint-Tropez"
+ },
+ "Sette Mezzo": {
+  "lat": 40.7685,
+  "lng": -73.9625,
+  "country": "United States",
+  "note": "NYC"
+ },
+ "Cobb County Corrections": {
+  "lat": 33.953,
+  "lng": -84.55,
+  "country": "United States",
+  "note": "Marietta"
+ },
+ "Cobb County Adult Detention Center": {
+  "lat": 33.953,
+  "lng": -84.55,
+  "country": "United States",
+  "note": "Marietta"
+ },
+ "Booby Trap": {
+  "lat": 29.7,
+  "lng": -95.4,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "Boobie Trap": {
+  "lat": 29.7,
+  "lng": -95.4,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "Graycliff Hotel": {
+  "lat": 25.077,
+  "lng": -77.343,
+  "country": "Bahamas",
+  "note": "Nassau"
+ },
+ "Marquee": {
+  "lat": 40.7505,
+  "lng": -74.003,
+  "country": "United States",
+  "note": "NYC"
+ },
+ "Strokers": {
+  "lat": 33.8,
+  "lng": -84.4,
+  "country": "United States",
+  "note": "approx, Atlanta"
+ },
+ "Angell Town Estate": {
+  "lat": 51.468,
+  "lng": -0.111,
+  "country": "United Kingdom",
+  "note": "Brixton"
+ },
+ "Sushi Saito": {
+  "lat": 35.666,
+  "lng": 139.74,
+  "country": "Japan",
+  "note": "Tokyo"
+ },
+ "51 Division, Toronto Police Service": {
+  "lat": 43.6555,
+  "lng": -79.364,
+  "country": "Canada",
+  "note": "manual pin"
+ },
+ "Habibiz": {
+  "lat": 43.256,
+  "lng": -79.87,
+  "country": "Canada",
+  "note": "approx, Hamilton"
+ },
+ "Foxwell Street and Jane Street": {
+  "lat": 43.69,
+  "lng": -79.5,
+  "country": "Canada",
+  "note": "manual pin"
+ },
+ "Neverland Ranch": {
+  "lat": 34.74,
+  "lng": -120.09,
+  "country": "United States",
+  "note": "manual pin"
+ },
+ "Kiki": {
+  "lat": 29.75,
+  "lng": -95.38,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "Kiki on the River": {
+  "lat": 25.772,
+  "lng": -80.205,
+  "country": "United States",
+  "note": "Miami River"
+ },
+ "Metalworks Studios": {
+  "lat": 43.63,
+  "lng": -79.7,
+  "country": "Canada",
+  "note": "approx, Mississauga"
+ },
+ "Y2": {
+  "lat": 43.645,
+  "lng": -79.4,
+  "country": "Canada",
+  "note": "approx, Toronto"
+ },
+ "Lovers Lake": {
+  "lat": null,
+  "lng": null,
+  "country": "Canada",
+  "note": "unconfirmed, off map"
+ },
+ "San Francisco Bay Area": {
+  "lat": 37.7884969,
+  "lng": -122.3558473,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Amalfi Coast": {
+  "lat": 40.6646536,
+  "lng": 14.6364481,
+  "country": "Italy",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Virgin Islands": {
+  "lat": 17.789187,
+  "lng": -64.7080574,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Gaza": {
+  "lat": 31.5256543,
+  "lng": 34.43524,
+  "country": "Palestine",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Biscayne Bay": {
+  "lat": 25.5659397,
+  "lng": -80.2164388,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Costa Careyes": {
+  "lat": 19.430038,
+  "lng": -105.0297484,
+  "country": "Mexico",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Napa Valley": {
+  "lat": 38.4616809,
+  "lng": -122.3141996,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Red Sea": {
+  "lat": 20.2965624,
+  "lng": 38.5343146,
+  "country": "International Waters",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Europe": {
+  "lat": 51.0,
+  "lng": 10.0,
+  "country": "Europe",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Silicon Valley": {
+  "lat": 37.4429964,
+  "lng": -122.1545229,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Atlantic Ocean": {
+  "lat": 13.581921,
+  "lng": -38.320312,
+  "country": null,
+  "note": "reviewed, geocoder result kept"
+ },
+ "Africa": {
+  "lat": 11.5024338,
+  "lng": 17.7578122,
+  "country": "Africa",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Fort Bend County": {
+  "lat": 29.511218,
+  "lng": -95.7807348,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "The Bahamas": {
+  "lat": 24.7736546,
+  "lng": -78.0000547,
+  "country": "Bahamas",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Saint Michael": {
+  "lat": 13.1182985,
+  "lng": -59.6015783,
+  "country": "Barbados",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Oromia": {
+  "lat": 7.6721644,
+  "lng": 40.0299727,
+  "country": "Ethiopia",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Tigray": {
+  "lat": 13.881273,
+  "lng": 39.127495,
+  "country": "Ethiopia",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Amhara": {
+  "lat": 11.5,
+  "lng": 38.5,
+  "country": "Ethiopia",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Palestine": {
+  "lat": 32.2591449,
+  "lng": 35.3015948,
+  "country": "Palestinian Territories",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Nile River": {
+  "lat": 22.724378,
+  "lng": 32.1053309,
+  "country": "Egypt",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Clayton County": {
+  "lat": 33.5204959,
+  "lng": -84.3591713,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Wharton County": {
+  "lat": 29.2454534,
+  "lng": -96.2291474,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Mississippi River": {
+  "lat": 39.6335863,
+  "lng": -91.246977,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "The 905 (Greater Toronto Area)": {
+  "lat": 43.9019833,
+  "lng": -79.268313,
+  "country": "Canada",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Puerto Rico": {
+  "lat": 18.2247706,
+  "lng": -66.4858295,
+  "country": "United States",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Saint Barthélemy": {
+  "lat": 17.8967693,
+  "lng": -62.825598,
+  "country": "France",
+  "note": "reviewed, geocoder result kept"
+ },
+ "Greystone Manor": {
+  "lat": 34.0905,
+  "lng": -118.3855,
+  "country": "United States",
+  "note": "West Hollywood"
+ },
+ "Bowen Homes": {
+  "lat": 33.786,
+  "lng": -84.47,
+  "country": "United States",
+  "note": "Atlanta"
+ },
+ "SilverCity": {
+  "lat": 43.7065,
+  "lng": -79.3985,
+  "country": "Canada",
+  "note": "Yonge-Eglinton, Toronto"
+ },
+ "LIV Nightclub": {
+  "lat": 25.8175,
+  "lng": -80.1225,
+  "country": "United States",
+  "note": "Fontainebleau, Miami Beach"
+ },
+ "LIV": {
+  "lat": 25.8175,
+  "lng": -80.1225,
+  "country": "United States",
+  "note": "Fontainebleau, Miami Beach"
+ },
+ "King of Diamonds": {
+  "lat": 25.942,
+  "lng": -80.2456,
+  "country": "United States",
+  "note": "Miami Gardens"
+ },
+ "Tao Nightclub": {
+  "lat": 36.1215,
+  "lng": -115.1739,
+  "country": "United States",
+  "note": "Venetian, Las Vegas"
+ },
+ "Bayside High School": {
+  "lat": 34.05,
+  "lng": -118.53,
+  "country": "United States",
+  "note": "fictional, Saved by the Bell, Palisades"
+ },
+ "Broadway": {
+  "lat": 40.759,
+  "lng": -73.985,
+  "country": "United States",
+  "note": "Theater District, NYC"
+ },
+ "High Rollers": {
+  "lat": 29.76,
+  "lng": -95.37,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "Harlem Knights": {
+  "lat": 29.76,
+  "lng": -95.37,
+  "country": "United States",
+  "note": "approx, Houston"
+ },
+ "Mackenzie Avenue": {
+  "lat": 43.68,
+  "lng": -79.4,
+  "country": "Canada",
+  "note": "approx, Toronto"
+ },
+ "Wally's": {
+  "lat": 34.0676,
+  "lng": -118.4005,
+  "country": "United States",
+  "note": "Beverly Hills"
+ },
+ "Pyramids of Giza": {
+  "lat": 29.9792,
+  "lng": 31.1342,
+  "country": "Egypt",
+  "note": ""
+ },
+ "The Mercer Hotel": {
+  "lat": 40.7247,
+  "lng": -73.9985,
+  "country": "United States",
+  "note": "SoHo, NYC"
+ },
+ "Highlight Room": {
+  "lat": 34.0995,
+  "lng": -118.3301,
+  "country": "United States",
+  "note": "Hollywood"
+ },
+ "House of Blues": {
+  "lat": 34.0955,
+  "lng": -118.3797,
+  "country": "United States",
+  "note": "Sunset Strip, LA"
+ }
+}
