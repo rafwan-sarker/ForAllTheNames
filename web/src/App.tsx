@@ -20,7 +20,7 @@ export default function App() {
   const [searching, setSearching] = useState(false);
   const [about, setAbout] = useState(false);
   const [logo, setLogo] = useState("/logo.jpg");
-  const railMode = cat === "place" && sp.get("r") === "place" ? "place" : "album";
+  const railMode = cat === "place" && sp.get("r") !== "album" ? "place" : "album";
   const set = (patch: Record<string, string | null>) => {
     const next = new URLSearchParams(sp);
     for (const [k, v] of Object.entries(patch)) { if (v) next.set(k, v); else next.delete(k); }
@@ -71,8 +71,8 @@ export default function App() {
       <nav className="rail" aria-label="Albums">
         {cat === "place" && (
           <div className="rtog">
-            <button className={railMode === "album" ? "on" : ""} onClick={() => set({ r: null })}>ALBUMS</button>
-            <button className={railMode === "place" ? "on" : ""} onClick={() => set({ r: "place" })}>PLACES</button>
+            <button className={railMode === "album" ? "on" : ""} onClick={() => set({ r: "album" })}>ALBUMS</button>
+            <button className={railMode === "place" ? "on" : ""} onClick={() => set({ r: null })}>PLACES</button>
           </div>
         )}
         {railMode === "place" ? <List key={album} rows={rows} selected={sel} onPick={(n) => set({ n })} /> : <>
