@@ -4,9 +4,9 @@ import { Tiles, Years } from "./PlacesView";
 import type { Album, Mention, Song } from "../types";
 
 /** Ranked names, each followed by the covers of the albums he says it on (oldest first). */
-export default function Board({ ms, songs, albums, order, title, selected, onPick, songTotal }: {
+export default function Board({ ms, songs, albums, order, title, selected, onPick, label, single, songTotal }: {
   ms: Mention[]; songs: Map<number, Song>; albums: Map<string, Album>; order: string[]; title: string; selected: string | null; onPick: (n: string) => void;
-  songTotal: number;
+  label: string; single: string; songTotal: number;
 }) {
   const [f, setF] = useState(""); const [limit, setLimit] = useState(60);
   const rows = useMemo(() => {
@@ -30,8 +30,8 @@ export default function Board({ ms, songs, albums, order, title, selected, onPic
         <input className="bfilter" placeholder="Find a name" value={f} onChange={(e) => setF(e.target.value)} />
       </div>
       <div className="bstats">
-        <Tiles items={[["Mentions", ms.length.toLocaleString()], ["Names", String(rows.length)],
-          ["Songs", withIt.toLocaleString(), `${pct(withIt, songTotal)} of ${songTotal}`],
+        <Tiles items={[["Mentions", ms.length.toLocaleString()], ["Unique " + label.toLowerCase(), String(rows.length)],
+          [`Songs with ${/^[aeiou]/i.test(single) ? "an" : "a"} ${single.toLowerCase()}`, pct(withIt, songTotal), `${withIt} of ${songTotal}`],
           ["Most common", topKind ? topKind[0] : "—", topKind ? `${topKind[1]} mentions` : ""]]} />
         <Years ms={ms} songs={songs} />
       </div>

@@ -74,7 +74,7 @@ export default function PlacesView({ d, all, ms, songs, albums, album, selected,
           {album.cover ? <img src={album.cover} alt={`${album.name} cover`} /> : <span className="ph">{album.guest ? "ft." : "+"}</span>}
           <div><div className="kicker">Album · {album.year ?? "various"}</div><h2 className="ptitle">{album.name}</h2></div>
         </div>
-        <Tiles items={[["Mentions", String(ms.length)], ["Places", String(rows.length)], ["Songs", withPlace.toLocaleString(), `${pct(withPlace, songTotal)} of ${songTotal}`]]} />
+        <Tiles items={[["Mentions", String(ms.length)], ["Unique places", String(rows.length)], ["Songs with a place", pct(withPlace, songTotal), `${withPlace} of ${songTotal}`]]} />
         <section className="psec"><h3>Top places</h3><small className="muted">by songs</small><Bars rows={rows} onPick={onPick} /></section>
         <section className="psec"><h3>Songs</h3><SongCards ms={[...ms].sort((a, b) => a.song - b.song || a.line - b.line)} songs={songs} albums={albums} all={d.mentions} go={go} /></section>
       </>
@@ -87,7 +87,7 @@ export default function PlacesView({ d, all, ms, songs, albums, album, selected,
           <List rows={rows} selected={selected} onPick={onPick} />
         </div>
         <div className="desk-only">
-        <Tiles items={[["Mentions", ms.length.toLocaleString()], ["Places", String(rows.length)], ["Countries", String(countries.length)], ["Songs", withPlace.toLocaleString(), `${pct(withPlace, songTotal)} of ${songTotal}`]]} />
+        <Tiles items={[["Mentions", ms.length.toLocaleString()], ["Unique places", String(rows.length)], ["Countries", String(countries.length)], ["Songs with a place", pct(withPlace, songTotal), `${withPlace} of ${songTotal}`]]} />
         <Years ms={ms} songs={songs} />
         <div className="pgrid">
           <section className="psec"><h3>Most-mentioned places</h3><small className="muted">by songs</small><Bars rows={rows} onPick={onPick} /></section>
