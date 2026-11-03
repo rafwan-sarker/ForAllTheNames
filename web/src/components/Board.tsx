@@ -31,7 +31,7 @@ export default function Board({ ms, songs, albums, order, title, selected, onPic
       </div>
       <div className="bstats">
         <Tiles items={[["Mentions", ms.length.toLocaleString()], ["Names", String(rows.length)],
-          ["Of songs", pct(withIt, songTotal), `${withIt} of ${songTotal}`],
+          ["Songs", withIt.toLocaleString(), `${pct(withIt, songTotal)} of ${songTotal}`],
           ["Most common", topKind ? topKind[0] : "—", topKind ? `${topKind[1]} mentions` : ""]]} />
         <Years ms={ms} songs={songs} />
       </div>
