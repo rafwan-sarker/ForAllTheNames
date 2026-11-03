@@ -71,8 +71,8 @@ export default function App() {
       <nav className="rail" aria-label="Albums">
         {cat === "place" && (
           <div className="rtog">
-            <button className={railMode === "album" ? "on" : ""} onClick={() => set({ r: "album" })}>ALBUMS</button>
             <button className={railMode === "place" ? "on" : ""} onClick={() => set({ r: null })}>PLACES</button>
+            <button className={railMode === "album" ? "on" : ""} onClick={() => set({ r: "album" })}>ALBUMS</button>
           </div>
         )}
         {railMode === "place" ? <List key={album} rows={rows} selected={sel} onPick={(n) => set({ n })} /> : <>
