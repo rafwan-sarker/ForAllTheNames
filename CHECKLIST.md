@@ -30,4 +30,4 @@ Paid steps (Claude extraction) are marked $. Everything else is free.
 - [x] Redesign (late-night gold, ranking-first, project strip, ⌘K search, song pages); browser-checked home, category, map, entity, song, search, mobile (pre-redesign)
 - [ ] Mobile pass on the new design
 - [ ] `/code-review` in a fresh context
-- [ ] Private GitHub repo `rafwan-sarker/drakenames`; Vercel deploy only if Raf says so
+- [ ] GitHub repo `rafwan-sarker/ForAllTheNames` (public); Vercel deploy only if Raf says so

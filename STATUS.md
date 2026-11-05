@@ -1,10 +1,10 @@
 # Status
 
 ## Now
-- 2026-11-02: LIVE at https://for-all-the-names.vercel.app (Vercel project rsarkerai-8352s-projects/for-all-the-names, deployed from web/ with `vercel deploy --prod`). Code on private repo rafwan-sarker/drakenames, branch feature/site-v1.
+- 2026-11-02: LIVE at https://for-all-the-names.vercel.app (Vercel project rsarkerai-8352s-projects/for-all-the-names, deployed from web/ with `vercel deploy --prod`). Code public at rafwan-sarker/ForAllTheNames, default branch main.
 
 ## Next
-1. Raf: check on a real iPhone (Safari); merge feature/site-v1 into main.
+1. Raf: check on a real iPhone (Safari). Pick a license (none yet, so all rights reserved).
 2. Optional: feedback link (VITE_FEEDBACK_URL), own domain, map tiles with a key (CARTO/MapTiler) if traffic grows.
 3. Data polish: ~250 unhighlighted quotes, ~40 city-level venue pins, long-tail duplicate names. Pipeline helper cleanup.
 
@@ -12,6 +12,7 @@
 - none
 
 ## Decisions
+- 2026-11-05: Repo is public as rafwan-sarker/ForAllTheNames (Raf). feature/site-v1 fast-forwarded into main so the README shows. Geocoder User-Agent no longer carries an email; the old value remains in git history.
 - 2026-11-02: Project folder renamed drizzy-world -> ~/AI/forallthenames (Raf asked). GitHub repo renamed to rafwan-sarker/drakenames.
 - 2026-11-02: Category tabs in Rock Salt (free lookalike of the IYRTITL lettering). The real recreation "With My Woes" is personal-use only, not used.
 - 2026-11-02: Wordmark in Oswald 700, spaced caps, blue/red offset glow (ICEMAN promo look, Raf picked B); no subtitle.
