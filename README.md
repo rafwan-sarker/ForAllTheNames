@@ -45,13 +45,10 @@ The dataset covers 473 of Drake's own songs and 133 guest verses, from 2006 to 2
 
 ```mermaid
 flowchart LR
-    A["Genius<br>songs and lyrics"] --> B["Python pipeline<br>song set and clean lyrics"]
-    B --> C["Claude Sonnet<br>first pass"]
-    C --> D["Claude Sonnet<br>sweep for misses"]
-    D --> E["Verification<br>lines, merges, choruses"]
-    E --> F["OpenStreetMap<br>place coordinates"]
-    F --> G["data.json"]
-    G --> H["React site"]
+    A["Genius<br>songs and lyrics"] --> B["Claude Sonnet<br>reads every song twice"]
+    B --> C["Python checks<br>lines, choruses, merges"]
+    C --> D["OpenStreetMap<br>place coordinates"]
+    D --> E["data.json<br>and React site"]
 ```
 
 There is no backend. The pipeline produces one static `data.json`, and the site reads it in the browser.
